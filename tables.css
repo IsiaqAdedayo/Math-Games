@@ -1,0 +1,249 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+min-height: 100%;
+}
+
+body {
+transform: scale(1.0);
+transform-origin: 0 0;
+margin: 40px;
+font: 1.2em/1.2 'Noto Sans', sans-serif;
+background: linear-gradient(90deg, #b9c3c9, #6b7c87);
+}
+
+
+
+.timerDiv{
+    position: relative;
+    width: 26em;
+    margin: 0 auto;
+    padding: 1.5em;
+    height: 1em;
+    background-color:  #02060d; 
+    border-radius: 0.5em 0.5em 0 0; 
+}
+
+.scores{
+    color: #8f13c0;
+    margin-left: 0;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.start{
+   width: 5em;
+   margin-left: 9.5em;
+   height: 2.5em;
+   background-color: #e6e20e;
+   border-radius: 0.5em;
+   color: #0e11e6;
+   box-shadow: 0 0 5em #e6e20e;
+   margin-top: 15px;
+}
+
+.start h3{
+    position: absolute;
+    margin: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+
+h1{
+    position: absolute;
+    color: #ff0000;
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-left: 18em;
+}
+
+h1 span{
+    margin-left: 1em;
+}
+
+.container {
+    position: relative;
+    width: 26em;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 0 0 0.5em 0.5em;
+    background: #2a20ca;
+    background: linear-gradient(360deg, #2a20ca, #9b9bc9, #02060d);
+    box-shadow: 0 0 1em rgba(0, 0, 0, .6);
+}
+
+.questionDiv{
+    width: 24em;
+    margin: 0 auto;
+    background-color: #0e11e6;
+    border-radius: 0.5rem;
+    height: 11em;
+}
+
+.optionDiv{
+    /* width: 24em; */
+    margin: 0 auto;
+    margin-top: 1em;
+    height: 5em;
+    
+}
+
+.options{
+   width: 2.1em;
+   margin-left: 0.6rem;
+   float: left; 
+   height: 2em;
+   background-color: #e6e20e;
+   border-radius: 1em;
+   color: #0e11e6;
+   font-size: 3.1rem;
+   box-shadow: 0 0 0.5em #e6e20e;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.question{
+    position: absolute;
+    margin-top: 3rem;
+    font-size: 4rem;
+    color: #e6e20e;
+}
+
+.que{
+    float: left;
+    margin-left: 0.8rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.options span{
+    position: absolute;
+    margin-left: 0.5em; 
+    margin-top: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+span{
+    margin-left: 4rem; 
+}
+
+.footer-bottom{
+    position: absolute;
+	background: #000;
+	padding: 1em 1em;
+    text-align: center;
+    padding-top: 2em;
+    /* width: 60em; */
+    margin-left: 0;
+}
+.footer-bottom p{
+	margin:0;
+	font-size: 1.1em;
+	color:#fff;	
+}
+.footer-bottom a{
+	color:#F93133;
+	text-decoration:none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+}
+.footer-bottom a:hover{
+	color: #fff;
+}
+
+
+@media only screen and (max-width: 968px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .timerDiv{
+        height: 9vh;
+        margin: 0;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .container{
+        margin: 0;
+        width: 100vw;
+        height: 115vh;
+    }
+
+    .scores{
+        font-size: 3vw;
+    }
+
+    h1{
+        font-size: 3vw;
+        margin-left: 47vw;
+    }
+
+    .questionDiv{
+        height: 40vh;
+        width: 90vw;
+        margin-top: -3vh;
+    }
+
+    .que{
+        margin-left: 10vw; 
+    }
+
+    .question{
+        margin-left: 6vw;
+        margin-top: 9vh;
+        font-size:  17vw;
+    }
+    
+
+
+    .options{
+        float: none;
+        border-radius: 9vw;
+        height: 15vh;
+        width: 37vw;
+        margin-left: -2vw;
+    }
+    .firstOptions{
+        position: relative;
+        float: left;
+        padding-left: 10%;
+    }
+    .secondOptions{
+        padding-left: 50vw;
+    }
+    #optionB, #optionD{
+        margin-top: 3vh;
+    }
+    .options span {
+        margin-left: 10.5vw;
+        margin-top: 0.4vh;
+        font-size: 130%;
+    }
+
+    .start {
+        position: relative;
+        margin-top: 17vh;
+        margin-left: 31vw;
+    }
+
+    span {
+        margin-left: 0rem;
+    }
+    
+}
